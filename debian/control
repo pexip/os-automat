@@ -1,0 +1,39 @@
+Source: automat
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+	       dh-python,
+	       python-all (>= 2.6.6-3),
+	       python-setuptools (>= 0.6b3),
+	       python-setuptools-scm,
+	       python-characteristic,
+	       python-six,
+	       python-attr,
+	       python3-all,
+	       python3-setuptools (>= 0.6b3),
+	       python3-setuptools-scm,
+	       python3-characteristic,
+	       python3-six,	       
+	       python3-attr,
+Standards-Version: 3.9.8
+Homepage: https://github.com/freeekanayaka/systemfixtures
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/automat.git
+Vcs-Git: git://anonscm.debian.org/python-modules/packages/automat.git
+
+Package: python-automat
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Self-service finite-state machines for the programmer on the go
+ Automat is a library for concise, idiomatic Python expression of
+ finite-state automata (particularly deterministic finite-state
+ transducers).
+
+Package: python3-automat
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Self-service finite-state machines for the programmer on the go
+ Automat is a library for concise, idiomatic Python expression of
+ finite-state automata (particularly deterministic finite-state
+ transducers).
