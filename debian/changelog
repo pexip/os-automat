@@ -1,3 +1,9 @@
+automat (0.6.0-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Wed, 08 Jul 2020 14:04:27 +0000
+
 automat (0.6.0-1) unstable; urgency=medium
 
   * New upstream version 0.6.0
