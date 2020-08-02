@@ -4,7 +4,7 @@
 # Fri, 17 Feb 2017 11:27:31 +0000
 export PYBUILD_NAME=automat
 %:
-	dh $@ --with python2,python3 --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_install:
 	dh_install

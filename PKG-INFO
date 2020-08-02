@@ -1,6 +1,6 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.1
 Name: Automat
-Version: 0.6.0
+Version: 20.2.0
 Summary: Self-service finite-state machines for the programmer on the go.
 Home-page: https://github.com/glyph/Automat
 Author: Glyph
@@ -9,6 +9,11 @@ License: MIT
 Description: 
         Automat
         =======
+        
+        
+        .. image:: https://readthedocs.org/projects/automat/badge/?version=latest
+           :target: http://automat.readthedocs.io/en/latest/
+           :alt: Documentation Status
         
         
         .. image:: https://travis-ci.org/glyph/automat.svg?branch=master
@@ -26,6 +31,22 @@ Description:
         
         Automat is a library for concise, idiomatic Python expression of finite-state
         automata (particularly deterministic finite-state transducers).
+        
+        Read more here, or on `Read the Docs <https://automat.readthedocs.io/>`_\ , or watch the following videos for an overview and presentation
+        
+        Overview and presentation by **Glyph Lefkowitz** at the first talk of the first Pyninsula meetup, on February 21st, 2017:
+        
+        .. image:: https://img.youtube.com/vi/0wOZBpD1VVk/0.jpg
+           :target: https://www.youtube.com/watch?v=0wOZBpD1VVk
+           :alt: Glyph Lefkowitz - Automat - Pyninsula #0
+        
+        
+        Presentation by **Clinton Roy** at PyCon Australia, on August 6th 2017:
+        
+        .. image:: https://img.youtube.com/vi/TedUKXhu9kE/0.jpg
+           :target: https://www.youtube.com/watch?v=TedUKXhu9kE
+           :alt: Clinton Roy - State Machines - Pycon Australia 2017
+        
         
         Why use state machines?
         ^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,7 +151,7 @@ Description:
                def dont_have_beans(self):
                    "In this state, you don't have any beans."
         
-        ``have_beans`` is the ``initial`` state because ``CoffeeBrewer`` starts without beans
+        ``dont_have_beans`` is the ``initial`` state because ``CoffeeBrewer`` starts without beans
         in it.
         
         (And another input to put some beans in:)
@@ -142,7 +163,7 @@ Description:
                    "The user put in some beans."
         
         Finally, you hook everything together with the ``upon`` method of the functions
-        decorated with ``machine.state``\ :
+        decorated with ``_machine.state``\ :
         
         .. code-block:: python
         
@@ -199,19 +220,19 @@ Description:
         
         .. code-block:: python
         
-               @machine.state()
+               @_machine.state()
                def connected(self):
                    "connected"
-               @machine.state()
+               @_machine.state()
                def not_connected(self):
                    "not connected"
-               @machine.input()
+               @_machine.input()
                def send_message(self):
                    "send a message"
-               @machine.output()
+               @_machine.output()
                def _actually_send_message(self):
                    self._transport.send(b"message")
-               @machine.output()
+               @_machine.output()
                def _report_sending_failure(self):
                    print("not connected")
                connected.upon(send_message, enter=connected, [_actually_send_message])
@@ -340,14 +361,14 @@ Description:
         .. code-block:: python
         
            class LightSwitch(object):
-               machine = MethodicalMachine()
-               @machine.state(serialized="on")
+               _machine = MethodicalMachine()
+               @_machine.state(serialized="on")
                def on_state(self):
                    "the switch is on"
-               @machine.state(serialized="off", initial=True)
+               @_machine.state(serialized="off", initial=True)
                def off_state(self):
                    "the switch is off"
-               @machine.input()
+               @_machine.input()
                def flip(self):
                    "flip the switch"
                on_state.upon(flip, enter=off_state, outputs=[])
@@ -361,13 +382,13 @@ Description:
         
         .. code-block:: python
         
-               @machine.input()
+               @_machine.input()
                def query_power(self):
                    "return True if powered, False otherwise"
-               @machine.output()
+               @_machine.output()
                def _is_powered(self):
                    return True
-               @machine.output()
+               @_machine.output()
                def _not_powered(self):
                    return False
                on_state.upon(query_power, enter=on_state, outputs=[_is_powered],
@@ -386,13 +407,13 @@ Description:
         
         .. code-block:: python
         
-               @machine.serializer()
+               @_machine.serializer()
                def save(self, state):
                    return {"is-it-on": state}
         
         Serializers can be public methods, and they can return whatever you like.  If
         necessary, you can have different serializers - just multiple methods decorated
-        with ``@machine.serializer()`` - for different formats; return one data-structure
+        with ``@_machine.serializer()`` - for different formats; return one data-structure
         for JSON, one for XML, one for a database row, and so on.
         
         When it comes time to unserialize, though, you generally want a private method,
@@ -407,7 +428,7 @@ Description:
         
         .. code-block:: python
         
-               @machine.unserializer()
+               @_machine.unserializer()
                def _restore(self, blob):
                    return blob["is-it-on"]
         
@@ -446,3 +467,15 @@ Description:
         
 Keywords: fsm finite state machine automata
 Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: visualize
