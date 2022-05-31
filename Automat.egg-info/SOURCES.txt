@@ -23,7 +23,16 @@ automat/_test/test_discover.py
 automat/_test/test_methodical.py
 automat/_test/test_trace.py
 automat/_test/test_visualize.py
-docs/debugging.md
+benchmark/test_transitions.py
+docs/Makefile
+docs/about.rst
+docs/api.rst
+docs/conf.py
+docs/debugging.rst
+docs/index.rst
+docs/make.bat
+docs/visualize.rst
+docs/_static/mystate.machine.MyMachine._machine.dot.png
 docs/examples/automat_example.py
 docs/examples/io_coffee_example.py
 docs/examples/lightswitch.py
