@@ -22,7 +22,7 @@ Standards-Version: 3.9.8
 Homepage: https://github.com/freeekanayaka/systemfixtures
 Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/automat.git
 Vcs-Git: git://anonscm.debian.org/python-modules/packages/automat.git
-XS-Pexip-Upstream: http://mirror.einval.org/debian/ buster
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
 
 Package: python-automat
 Architecture: all
