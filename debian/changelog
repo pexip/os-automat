@@ -1,3 +1,53 @@
+automat (20.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Diego M. Rodriguez ]
+  * New upstream version 20.2.0 (Closes: #954079)
+  * d/patches: refresh patches for 20.2.0
+  * d/control: drop python3-characteristic from BD
+  * d/control: bump Standards-Version to 4.5.0
+
+  [ Tristan Seligmann ]
+  * Bump debhelper-compat to 13.
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Sun, 02 Aug 2020 14:53:19 +0200
+
+automat (0.8.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #936167, #954441
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 01 Apr 2020 20:41:39 -0400
+
+automat (0.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/watch: Use https protocol
+  * d/control: Remove trailing whitespaces
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Scott Kitterman ]
+  * New upstream release (Closes: #948416)
+    - Refresh patches
+
+ -- Scott Kitterman <scott@kitterman.com>  Wed, 18 Mar 2020 17:50:44 -0400
+
+automat (0.6.0-2) unstable; urgency=medium
+
+  * Fix homepage link in control file
+
+ -- Free Ekanayaka <freee@debian.org>  Wed, 20 Sep 2017 14:45:25 +0000
+
 automat (0.6.0-1pexip2) pexip; urgency=medium
 
   * Rebuild in buster environment

@@ -9,7 +9,7 @@ the dependency on m2r.
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index 5971d97..c0b221e 100644
+index 3fb7fdb..900cc28 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -8,7 +8,7 @@ try:
@@ -29,4 +29,4 @@ index 5971d97..c0b221e 100644
 +#        'm2r',
      ],
      install_requires=[
-         "attrs",
+         "attrs>=19.2.0",
