@@ -1,20 +1,25 @@
 Source: automat
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Uploaders: Free Ekanayaka <freee@debian.org>
 Section: python
 Priority: optional
 Build-Depends: debhelper-compat (= 13),
-	       dh-python,
+	       dh-sequence-python3,
 	       python3-all,
-	       python3-setuptools (>= 0.6b3),
+	       python3-setuptools,
 	       python3-setuptools-scm,
-	       python3-six,
+	       python3-wheel,
 	       python3-attr,
-Standards-Version: 4.5.0
+	       graphviz <!nocheck>,
+	       python3-pytest <!nocheck>,
+	       python3-twisted <!nocheck>,
+	       python3-graphviz <!nocheck>,
+Standards-Version: 4.6.2
 Homepage: https://pypi.python.org/pypi/Automat
-Vcs-Browser: https://salsa.debian.org/python-team/modules/automat
-Vcs-Git: https://salsa.debian.org/python-team/modules/automat.git
+Vcs-Browser: https://salsa.debian.org/python-team/packages/automat
+Vcs-Git: https://salsa.debian.org/python-team/packages/automat.git
 Rules-Requires-Root: no
+Testsuite: autopkgtest-pkg-pybuild
 
 Package: python3-automat
 Architecture: all
