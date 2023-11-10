@@ -11,10 +11,10 @@ automata (particularly deterministic finite-state transducers).
 
 Read more here, or on [Read the Docs](https://automat.readthedocs.io/), or watch the following videos for an overview and presentation
 
-Overview and presentation by **Glyph Lefkowitz** at the first talk of the first Pyninsula meetup, on February 21st, 2017:
+Overview and presentation by **Glyph Lefkowitz** at the first talk of the first Pyninsula meetup, on February 21st, 2017:  
 [![Glyph Lefkowitz - Automat - Pyninsula #0](https://img.youtube.com/vi/0wOZBpD1VVk/0.jpg)](https://www.youtube.com/watch?v=0wOZBpD1VVk)
 
-Presentation by **Clinton Roy** at PyCon Australia, on August 6th 2017:
+Presentation by **Clinton Roy** at PyCon Australia, on August 6th 2017:  
 [![Clinton Roy - State Machines - Pycon Australia 2017](https://img.youtube.com/vi/TedUKXhu9kE/0.jpg)](https://www.youtube.com/watch?v=TedUKXhu9kE)
 
 ### Why use state machines? ###
@@ -47,8 +47,8 @@ values initialized, because they have to be called in the order you declare
 them.
 
 You can read about state machines and their advantages for Python programmers
-in considerably more detail
-[in this excellent series of articles from ClusterHQ](https://clusterhq.com/blog/what-is-a-state-machine/).
+in more detail [in this excellent article by Jean-Paul
+Calderone](https://web.archive.org/web/20160507053658/https://clusterhq.com/2013/12/05/what-is-a-state-machine/).
 
 ### What makes Automat different? ###
 
