@@ -1,4 +1,0 @@
-#!/bin/sh -e
-
-cd $AUTOPKGTEST_TMP
-python3 -m twisted.trial automat

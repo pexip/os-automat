@@ -1,5 +1,0 @@
-Tests: unit-tests-3
-Depends: @,
-	 graphviz,
-	 python3-twisted,
-	 python3-graphviz,
