@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-export PYBUILD_TEST_ARGS = {dir}/automat/_test
+export PYBUILD_TEST_ARGS = {dir}/src/automat/_test
 
 %:
 	dh $@ --buildsystem=pybuild

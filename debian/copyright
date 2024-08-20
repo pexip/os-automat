@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: systemfixtures
 Upstream-Contact: Free Ekanayaka <free@ekanayaka.io>
-Source: https://github.com/glyph/Automat
+Source: https://github.com/glyph/automat
 
 Files: *
 Copyright: (c) 2014 Rackspace

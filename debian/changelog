@@ -1,3 +1,19 @@
+automat (24.8.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Use pybuild-plugin-pyproject.
+  * Point to upstream homepage directly rather than via PyPI.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 20 Aug 2024 16:57:33 +0100
+
+automat (22.10.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * remove extraneous generated dependency on six (Closes: #1040368)
+
+ -- Alexandre Detiste <tchet@debian.org>  Tue, 02 Jan 2024 09:49:16 +0100
+
 automat (22.10.0-1) unstable; urgency=medium
 
   * Team upload.

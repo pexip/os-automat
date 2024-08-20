@@ -5,17 +5,17 @@ Section: python
 Priority: optional
 Build-Depends: debhelper-compat (= 13),
 	       dh-sequence-python3,
+	       pybuild-plugin-pyproject,
 	       python3-all,
 	       python3-setuptools,
 	       python3-setuptools-scm,
 	       python3-wheel,
-	       python3-attr,
 	       graphviz <!nocheck>,
 	       python3-pytest <!nocheck>,
 	       python3-twisted <!nocheck>,
 	       python3-graphviz <!nocheck>,
 Standards-Version: 4.6.2
-Homepage: https://pypi.python.org/pypi/Automat
+Homepage: https://github.com/glyph/automat
 Vcs-Browser: https://salsa.debian.org/python-team/packages/automat
 Vcs-Git: https://salsa.debian.org/python-team/packages/automat.git
 Rules-Requires-Root: no
