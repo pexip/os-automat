@@ -1,3 +1,10 @@
+automat (25.4.16-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 01 May 2025 13:55:17 +0100
+
 automat (24.8.1-1+pexip25u1) pexip-trixie; urgency=medium
 
   * Initial trixie build
